@@ -28,11 +28,6 @@ export default function Event({ evt }) {
     return (
         <Layout>
             <div className="mt-5 sm:mt-10" flex flex-col>
-                <div className="flex justify-end">
-                    <div className="flex">
-                        <Link href={`edit/${evt.id}`}><a className="pr-4 text-blue-500 flex items-center"><FaPencilAlt></FaPencilAlt> Edit</a></Link>
-                    </div>
-                </div>
                 <div className="mt-5">
                     <p className="font-normal ">{new Date(evt.date).toLocaleDateString('en-US')}</p>
                     <h1 className="font-bold text-3xl">{evt.name}</h1>
